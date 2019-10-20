@@ -1,0 +1,18 @@
+import java.io.*;
+public class CapCali {
+public static void main (String [] args) throws IOException{
+double cal;
+BufferedReader entrada = new BufferedReader (new InputStreamReader (System.in));
+String r = "s";
+while(r.equals("S")||r.equals("s")){
+System.out.println("Introduce la calificación:");
+do{
+System.out.println("cal[0-10]");
+cal=Double.parseDouble(entrada.readLine());}
+while ((cal>10)||(cal<0));
+if ((cal>=7.0)&&(cal<=10.0))
+System.out.println("aprobado");
+else
+System.out.println("reprobado");
+System.out.println("¿Desea continuar s/n?");
+r=entrada.readLine();}}}
